@@ -1,9 +1,8 @@
 package com.crazyfoodkart.Activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.crazyfoodkart.Fragments.CostFragment;
 import com.crazyfoodkart.Fragments.HomeFragment;
