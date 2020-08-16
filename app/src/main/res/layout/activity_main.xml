@@ -4,16 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activities.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+<!--    chip bottom nav bar implementation-->
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/chipNavBar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/crazy_foodkart"
-        android:textSize="20sp"
+        android:padding="8dp"
+        android:background="@color/lightGray"
+        app:cnb_menuResource="@menu/nav_item"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--    this frameLayout will contain the fragments for all the tabs-->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/chipNavBar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
